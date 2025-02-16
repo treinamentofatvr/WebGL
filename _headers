@@ -7,21 +7,16 @@
 # Arquivos do Unity
 /Build/*.data.gz
   Content-Encoding: gzip
-  Cache-Control: max-age=31536000
 
 /Build/*.wasm.gz
   Content-Type: application/wasm
   Content-Encoding: gzip
-  Cache-Control: max-age=31536000
 
 /Build/*.js.gz
   Content-Encoding: gzip
-  Cache-Control: max-age=31536000
 
 /Build/*.json
   Content-Type: application/json
-  Cache-Control: max-age=31536000
 
 # Assets estáticos (imagens, CSS)
 /TemplateData/*
-  Cache-Control: max-age=31536000
