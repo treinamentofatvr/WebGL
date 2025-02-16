@@ -2,8 +2,15 @@
   Cross-Origin-Embedder-Policy: require-corp
   Cross-Origin-Opener-Policy: same-origin
   Cross-Origin-Resource-Policy: cross-origin
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, OPTIONS
+  Cache-Control: public, max-age=31536000
+  Content-Security-Policy: worker-src blob:
 
-/Build/WEB.wasm.gz
+/*.gz
+  Content-Encoding: gzip
+
+/*.wasm.gz
   Content-Type: application/wasm
   Content-Encoding: gzip
 
@@ -14,3 +21,10 @@
 /*.js.gz
   Content-Type: application/javascript
   Content-Encoding: gzip
+
+/*.framework.js.gz
+  Content-Type: application/javascript
+  Content-Encoding: gzip
+
+/Build/*
+  Access-Control-Allow-Origin: *
