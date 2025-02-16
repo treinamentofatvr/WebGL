@@ -1,0 +1,4 @@
+[[headers]]
+  for = "/Build/WEB.wasm.gz"
+  [headers.values]
+    Content-Type = "application/wasm"
