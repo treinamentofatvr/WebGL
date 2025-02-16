@@ -4,19 +4,18 @@
   Cross-Origin-Opener-Policy: same-origin
   Access-Control-Allow-Origin: *
 
-# Arquivos do Unity
+# Arquivos do Unity (comprimidos com gzip)
 /Build/*.data.gz
+  Content-Type: application/octet-stream
   Content-Encoding: gzip
+  Cache-Control: max-age=31536000
 
 /Build/*.wasm.gz
   Content-Type: application/wasm
   Content-Encoding: gzip
+  Cache-Control: max-age=31536000
 
 /Build/*.js.gz
+  Content-Type: application/javascript
   Content-Encoding: gzip
-
-/Build/*.json
-  Content-Type: application/json
-
-# Assets estáticos (imagens, CSS)
-/TemplateData/*
+  Cache-Control: max-age=31536000
