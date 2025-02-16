@@ -1,21 +1,16 @@
-# Configurações globais
 /*
   Cross-Origin-Embedder-Policy: require-corp
   Cross-Origin-Opener-Policy: same-origin
-  Access-Control-Allow-Origin: *
+  Cross-Origin-Resource-Policy: cross-origin
 
-# Arquivos do Unity (comprimidos com gzip)
-/Build/*.data.gz
-  Content-Type: application/octet-stream
-  Content-Encoding: gzip
-  Cache-Control: max-age=31536000
-
-/Build/*.wasm.gz
+/Build/WEB.wasm.gz
   Content-Type: application/wasm
   Content-Encoding: gzip
-  Cache-Control: max-age=31536000
 
-/Build/*.js.gz
+/*.data.gz
+  Content-Type: application/octet-stream
+  Content-Encoding: gzip
+
+/*.js.gz
   Content-Type: application/javascript
   Content-Encoding: gzip
-  Cache-Control: max-age=31536000
